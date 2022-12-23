@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul li {
+  display: inline;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  width: 100vw;
+  height: 560vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  top: 12rem;
+  z-index: 0;
+}
+
+.container .inner_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner_wrap .event_banner {
+  width: 60rem;
+  height: 60em;
+  margin-top: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.212),
+      rgba(255, 255, 255, 0.161)
+    ),
+    url("https://cdn.pixabay.com/photo/2020/11/19/14/43/christmas-tree-5758765_960_720.jpg");
+  background-size: cover;
+}
+
+.inner_wrap .event_banner .inner_text {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner_wrap .event_banner .inner_text .top_text {
+  color: rgb(255, 245, 231);
+  font-size: 3rem;
+  margin-bottom: 8rem;
+}
+
+.inner_wrap .event_banner .inner_text .middle_text {
+  font-size: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  animation: textEffect 1s normal infinite linear both;
+}
+
+.inner_wrap .event_banner .inner_text .main_text {
+  color: #fff;
+  font-size: 15rem;
+  text-shadow: 0px 0px 20px rgb(151, 144, 103);
+  line-height: 12rem;
+}
+
+.inner_wrap .event_banner .inner_text .date_text {
+  font-size: 3rem;
+  margin-top: 6rem;
+  color: rgb(255, 243, 227);
+}
+
+.inner_wrap .event_banner .event_category {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60rem;
+  display: flex;
+}
+
+.inner_wrap .event_banner .event_category > a {
+  width: 33.34%;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(55, 55, 55);
+  border: 1px solid rgb(39, 39, 39);
+}
+
+.inner_wrap .event_banner .event_category > a em {
+  font-style: normal;
+  font-weight: 600;
+  color: rgb(188, 188, 188);
+}
+
+.inner_wrap .event_banner .event_category > a h3 {
+  color: #fff;
+  margin-top: 0.2rem;
+  font-size: 1.6rem;
+}
+
+.inner_wrap .event_banner .event_category > a:hover {
+  background-color: #fff;
+}
+
+.inner_wrap .event_banner .event_category > a:hover > li em {
+  color: rgb(89, 207, 226);
+}
+
+.inner_wrap .event_banner .event_category > a:hover > li h3 {
+  color: rgb(42, 42, 42);
+}
+
+.inner_wrap .best-item-salelist {
+  width: 60rem;
+  height: auto;
+}
+
+.best-item {
+  width: 60rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(41, 41, 41);
+}
+
+.best-item h2 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: rgb(200, 200, 200);
+}
+
+.best-item h1 {
+  margin-top: 0.8rem;
+  font-size: 4.8rem;
+  color: rgb(255, 255, 255);
+}
+
+.best-item h1 em {
+  font-style: normal;
+  color: rgb(228, 177, 228);
+}
+
+.best-item-list {
+  width: 60rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.best-item-list a {
+  width: 13.5rem;
+  margin-bottom: 2rem;
+}
+
+.best-item-list a .img {
+  width: 13.5rem;
+  height: 16rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgb(41, 41, 41);
+}
+
+.best-item-list a .img .img_banner {
+  width: 13.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.best-item-list a .img .img_banner > h2 {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.best-item-list a .img .img-wrap {
+  width: 13.5rem;
+  height: 13.5rem;
+  position: absolute;
+  border-radius: 0 0 10px 10px;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.best-item-list a .img .img-wrap img {
+  width: 13.5rem;
+  height: 13.5rem;
+  transition: 0.2s ease-in-out;
+}
+
+.best-item-list a li > em {
+  font-style: normal;
+  color: rgb(100, 100, 100);
+}
+
+.best-item-list a li > h2 {
+  font-size: 1.1rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+}
+
+.best-item-list a li > h1 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.best-item-list a li > h1 em {
+  font-style: normal;
+  margin-right: 0.3rem;
+  color: rgb(73, 218, 228);
+}
+
+.best-item-list a li > p {
+  display: inline;
+  color: grey;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+  margin-right: 0.3rem;
+  background-color: rgb(229, 229, 229);
+}
+
+.best-item-list a li > span {
+  display: inline;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+  background-color: rgb(255, 128, 128);
+}
+
+.best-item-list a:hover li .img img {
+  width: 13.5rem;
+  height: 13.5rem;
+  transform: scale(1.2);
+  overflow: hidden;
+}
+
+.best-item-list a:hover li > h2 {
+  color: rgb(195, 195, 195);
+}

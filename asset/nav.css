@@ -1,0 +1,142 @@
+header {
+  width: 100vw;
+  height: 7rem;
+  display: flex;
+  position: fixed;
+  z-index: 20;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .logo {
+  font-family: "Lobster", cursive;
+  font-size: 38px;
+  margin-right: 4rem;
+}
+
+nav .primary_item {
+  display: flex;
+}
+
+nav .primary_item > li {
+  width: auto;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+nav .primary_item > li > a {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+nav .primary_item > li:hover > a {
+  color: rgb(67, 228, 240);
+}
+
+nav .primary_item > li:hover > .active {
+  display: flex;
+  z-index: 10;
+}
+
+nav .primary_item li .active {
+  width: 100vw;
+  height: 5rem;
+  position: absolute;
+  top: calc(7rem + 1px);
+  right: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+nav .primary_item li .active .active_inner {
+  width: 62.5vw;
+}
+
+nav .primary_item > li .active .active_inner > li {
+  font-size: 23px;
+  margin-right: 1.5rem;
+}
+
+nav .primary_item li .always {
+  display: flex;
+}
+
+nav .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5rem;
+  margin-right: 2rem;
+}
+
+nav .input > i {
+  font-size: 1.5rem;
+  color: rgb(132, 132, 132);
+  margin-right: -2.6rem;
+  z-index: 1;
+}
+
+nav input {
+  font-size: 20px;
+  width: 23rem;
+  height: 3.3rem;
+  padding-left: 3rem;
+  outline: none;
+  border-radius: 0.3rem;
+  border: 1px solid rgb(132, 132, 132);
+}
+
+nav .secondary_item {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+nav .secondary_item li:first-child {
+  font-size: 2.3rem;
+  margin-right: 1.5rem;
+}
+
+nav .secondary_item li {
+  padding: 0 0.7rem;
+}
+
+nav .secondary_item .border {
+  border-right: 1px solid rgb(230, 230, 230);
+}
+
+nav .secondary_item .border:last-child {
+  border: none;
+}
+
+nav > button {
+  width: 9rem;
+  height: 3.8rem;
+  margin-left: 2rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgb(67, 228, 240);
+}
+
+nav > button:hover {
+  background-color: rgb(54, 183, 192);
+}
